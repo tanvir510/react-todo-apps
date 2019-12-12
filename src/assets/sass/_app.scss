@@ -1,0 +1,12 @@
+.main_area {
+  max-width: 500px;
+  margin: 10px auto;
+  .title {
+    text-transform: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 20px;
+    background: $base1;
+    color: $white;
+  }
+}
