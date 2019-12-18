@@ -84,16 +84,29 @@ export class App extends Component {
     });
   };
 
+  editTodoItem = (title, id) => {
+    let newItem = this.state.todos.map(todo => {
+      if (todo.id === id) {
+        todo.title = title;
+      }
+      return todo;
+    });
+    this.setState({
+      todos: newItem
+    });
+  };
+
   render() {
     return (
       <div className="main_area">
-        <h3 className="title">Todo item app</h3>
-        <AddTodo addNewItem={this.addNewItem} />
+        <h3 className="title"> Todo item app </h3>{" "}
+        <AddTodo addNewItem={this.addNewItem} />{" "}
         <Todos
           todos={this.state.todos}
           markStatus={this.markStatus}
           deleteTodo={this.deleteTodo}
-        />
+          editTodoItem={this.editTodoItem}
+        />{" "}
       </div>
     );
   }

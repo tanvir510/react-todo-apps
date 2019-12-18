@@ -9,6 +9,7 @@ class Todos extends Component {
         todo={todo}
         markStatus={this.props.markStatus}
         deleteTodo={this.props.deleteTodo}
+        editTodoItem={this.props.editTodoItem}
       />
     ));
   }
