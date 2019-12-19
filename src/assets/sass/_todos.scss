@@ -8,41 +8,43 @@
   .input_check {
     position: absolute;
     top: 50%;
-    left: 3%;
+    left: 2%;
     transform: translateY(-55%);
     margin: 0;
   }
   .delete_btn {
     position: absolute;
     top: 50%;
-    right: 4%;
+    right: 2%;
     transform: translateY(-50%);
-    width: 45px;
-    height: 21px;
+    width: 55px;
+    height: 25px;
     line-height: 16px;
     text-align: center;
     background: #ed5e68;
     color: #fff;
-    font-size: 10px;
+    font-size: 11px;
     cursor: pointer;
     outline: none;
     border: none;
+    border-radius: 4px;
   }
   .edit_btn {
     position: absolute;
     top: 50%;
-    right: 14%;
+    right: 10.5%;
     transform: translateY(-50%);
-    width: 45px;
-    height: 21px;
+    width: 55px;
+    height: 25px;
     line-height: 16px;
     text-align: center;
     background: green;
     color: #fff;
-    font-size: 10px;
+    font-size: 11px;
     cursor: pointer;
     outline: none;
     border: none;
+    border-radius: 4px;
   }
   p {
     display: block;
@@ -57,8 +59,8 @@
   overflow: hidden;
   margin: 12px 0px;
   input {
-    width: 70%;
-    padding: 14px 20px;
+    width: 79%;
+    padding: 15px 20px;
     background: #f5f5f5;
     font-size: 14px;
     border: none;
@@ -69,7 +71,7 @@
   .submit_btn {
     width: 20%;
     float: right;
-    padding: 14px 20px;
+    padding: 15px 20px;
     background: #f09245;
     font-size: 14px;
     border: none;
@@ -82,24 +84,10 @@
 .input_edit {
   outline: none;
   padding: 14px 10px 14px 34px;
-  width: 66%;
+  width: 79%;
   font-size: 14px;
 }
-
-.example-enter {
-  opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.example-leave {
-  opacity: 1;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+.todos_area {
+  max-width: 40%;
+  margin: 20px auto 0px;
 }
