@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 
 export class TodoItem extends Component {
+  componentWillUnmount() {
+    console.log("This component will unmount");
+  }
   state = {
     isEditable: false
   };
