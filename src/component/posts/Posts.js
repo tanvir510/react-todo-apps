@@ -1,13 +1,10 @@
 import React, { Component } from "react";
+import PostItem from "./PostItem";
 
 class Posts extends Component {
   state = {};
   render() {
-    return (
-      <div className="posts">
-        <h3>This is posts page</h3>
-      </div>
-    );
+    return this.props.posts.map(post => <PostItem key={post.id} post={post} />);
   }
 }
 
