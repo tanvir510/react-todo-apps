@@ -1,0 +1,30 @@
+.post_element {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 8px;
+  .post_item {
+    background: #2f9d58;
+    padding: 20px 30px 20px 15px;
+    min-height: 100px;
+    position: relative;
+    .post_title {
+      text-transform: capitalize;
+      color: #fff;
+      font-size: 15px;
+    }
+    .delete_btn {
+      position: absolute;
+      bottom: 2%;
+      right: 1%;
+      i {
+        color: #fff;
+      }
+    }
+  }
+}
+.post_heading {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  text-transform: capitalize;
+}
